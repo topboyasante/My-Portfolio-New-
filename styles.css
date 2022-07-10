@@ -144,6 +144,9 @@ section p {
   p {
     font-weight: 200;
   }
+  .navbar {
+    width: 90vw;
+  }
   .navbar .fa-solid {
     font-size: 1.3em;
   }
