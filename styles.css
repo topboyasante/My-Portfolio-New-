@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  transition: 0.5s;
+}
+
+.navbar {
+  width: 80vw;
+  height: 80px;
+  position: fixed;
+  left: 50%;
+  bottom: 0px;
+  transform: translate(-50%, -50%);
+  margin: 0 auto;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.navbar .fa-solid {
+  font-size: 2em;
+  cursor: pointer;
+  color: rgb(0, 0, 0);
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1em;
+}
+nav .logo {
+  font-size: 1.3em;
+}
+nav .darkMode-toggle .checkbox {
+  opacity: 0;
+  position: absolute;
+}
+nav .darkMode-toggle .checkbox:checked + label .ball {
+  transform: translateX(24px);
+}
+nav .darkMode-toggle label {
+  width: 50px;
+  height: 26px;
+  background-color: rgb(204, 202, 202);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+  border-radius: 50px;
+  position: relative;
+}
+nav .darkMode-toggle label .fa-moon {
+  color: #f39c12;
+}
+nav .darkMode-toggle label .fa-sun {
+  color: rgb(4, 4, 109);
+}
+nav .darkMode-toggle label .ball {
+  width: 22px;
+  height: 22px;
+  background-color: white;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  border-radius: 50px;
+  transition: 0.3s linear;
+}
+
+section {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80vw;
+  padding: 1em;
+  transition: 0.5s;
+}
+
+@media (max-width: 768px) {
+  .navbar .fa-solid {
+    font-size: 1em;
+  }
+}
+.dark {
+  transition: 0.5s;
+  background-color: rgb(44, 44, 44);
+  color: white;
+}
+.dark nav .logo {
+  color: white;
+}
+.dark nav .darkMode-toggle label {
+  background-color: #111;
+}
+.dark nav .darkMode-toggle .fa-moon {
+  color: #f1c40f;
+}
+.dark nav .darkMode-toggle .fa-sun {
+  color: #f39c12;
+}
+.dark .navbar {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.dark .navbar .fa-solid {
+  color: rgb(183, 182, 182);
+}/*# sourceMappingURL=styles.css.map */
