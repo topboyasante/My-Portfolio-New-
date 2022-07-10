@@ -5,6 +5,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+  text-decoration: none;
 }
 
 body {
@@ -124,12 +125,27 @@ section p {
   font-size: 3em;
 }
 
+.contact-me {
+  text-align: center;
+}
+.contact-me a {
+  color: black;
+  font-size: 2em;
+}
+.contact-me .links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2em;
+  gap: 3em;
+}
+
 @media (max-width: 768px) {
   p {
     font-weight: 200;
   }
   .navbar .fa-solid {
-    font-size: 1em;
+    font-size: 1.3em;
   }
   section h1 {
     font-size: 2em;
@@ -160,4 +176,7 @@ section p {
 }
 .dark .navbar .fa-solid {
   color: rgb(183, 182, 182);
+}
+.dark a {
+  color: white;
 }/*# sourceMappingURL=styles.css.map */

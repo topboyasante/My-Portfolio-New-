@@ -5,6 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    text-decoration: none;
 }
 body{
     transition: 0.5s;
@@ -128,6 +129,20 @@ section{
         }
     }
 }
+.contact-me{
+    text-align: center;
+    a{
+        color: black;
+        font-size: 2em;
+    }
+    .links{
+        display: flex;
+        align-items: center;
+        justify-content:center;
+        margin: 2em;
+        gap: 3em;
+    }
+}
 //Media Queries
 @media (max-width:768px) {
     p{
@@ -135,7 +150,7 @@ section{
     }
     .navbar{
         .fa-solid{
-            font-size: 1em;
+            font-size: 1.3em;
         }
     }
     section{
@@ -144,12 +159,6 @@ section{
         }
         p{
             font-size: 1.2em;
-        }
-    }
-    .tools-used{
-        .main-flex{
-            .frontend{
-            }
         }
     }
 }
@@ -179,5 +188,8 @@ section{
         .fa-solid{
              color: rgb(183, 182, 182);
         }
+    }
+    a{
+        color: white;
     }
 }
