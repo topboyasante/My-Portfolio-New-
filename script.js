@@ -4,6 +4,8 @@ const checkbox = document.getElementById('checkbox');
 checkbox.addEventListener('change',function switchMode(){
     document.body.classList.toggle('dark');
 })
+
+
 //Make The Sections Appear and disappear
 
 document.getElementById('about').style.opacity = "0";

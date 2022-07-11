@@ -95,36 +95,6 @@ section p {
   font-size: 1.5em;
 }
 
-.tools-used {
-  text-align: center;
-}
-.tools-used .main-flex {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 2em;
-  width: 80vw;
-}
-.tools-used .main-flex .frontend {
-  width: 50%;
-  padding: 1em;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
-}
-.tools-used .main-flex .frontend .fe-flex {
-  display: flex;
-  justify-content: space-around;
-}
-.tools-used .main-flex .frontend .fe-flex .left, .tools-used .main-flex .frontend .fe-flex .right {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 2em;
-}
-.tools-used .main-flex .frontend .fe-flex .left i, .tools-used .main-flex .frontend .fe-flex .right i {
-  font-size: 3em;
-}
-
 .contact-me {
   text-align: center;
 }
@@ -140,10 +110,20 @@ section p {
   gap: 3em;
 }
 
+.tools-used .box .flex-column {
+  display: flex;
+  gap: 2em;
+  margin: 1em 0;
+}
+.tools-used .box .flex-column i {
+  font-size: 2em;
+}
+
+p {
+  font-weight: 200;
+}
+
 @media (max-width: 768px) {
-  p {
-    font-weight: 200;
-  }
   .navbar {
     width: 90vw;
   }

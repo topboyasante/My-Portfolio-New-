@@ -98,37 +98,6 @@ section{
     }
    
 }
-.tools-used{
-    text-align: center;
-    
-    .main-flex{
-        display: flex;
-        justify-content:center;
-        align-items: center;
-        gap: 2em;
-        width: 80vw;
-        .frontend{
-            width: 50%;
-            padding: 1em;
-            box-shadow:  0 5px 15px rgba(0,0,0,0.6);
-            .fe-flex{
-                display: flex;
-                justify-content: space-around;
-                .left ,.right{
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    justify-content: center;
-                    gap: 2em;
-    
-                    i{
-                        font-size: 3em;
-                    }
-                }
-            }
-        }
-    }
-}
 .contact-me{
     text-align: center;
     a{
@@ -143,11 +112,23 @@ section{
         gap: 3em;
     }
 }
-//Media Queries
-@media (max-width:768px) {
-    p{
+.tools-used{
+    .box{
+        .flex-column{
+            display: flex;
+            gap: 2em;
+            margin: 1em 0;
+            i{
+                font-size: 2em;
+            }
+        }
+    }
+}
+ p{
         font-weight: 200;
     }
+//Media Queries
+@media (max-width:768px) {
     .navbar{
         width: 90vw;
         .fa-solid{
